@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СУПЕР МЕГА ПРОДУКТ</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #fff7cc;
+        }
+
+        header,
+        footer {
+            background: yellow;
+            color: red;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 650px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .big-text{
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+            text-align: center;
+        }
+
+        .small-text{
+            font-size: 12px;
+            color: gray;
+            text-align: center;
+        }
+
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .reasons-grid div {
+            background: #fff9e6;
+            border: 2px solid orange;
+            border-radius: 10px;
+            padding: 15px;
+            transition: 0.3s;
+        }
+
+        .reasons-grid div:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .slogans p {
+            font-size: 24px;
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .reviews-flex {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .review {
+            border: 2px solid orange;
+            padding: 10px;
+            flex: 1 1 150px;
+        }
+
+        aside {
+            background: white;
+            text-align: center;
+            padding: 10px;
+            border: 2px solid red;
+        }
+
+        aside img {
+            width: 100%;
+        }
+
+        .popup-ad {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border: 6px solid red;
+            display: none;
+            z-index: 1000;
+            padding: 10px;
+        }
+
+        .popup-ad img {
+            display: block;
+            margin: 10px auto;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                order: 2;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .slogans p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🔥 СУПЕР МЕГА ПРОДУКТ 🔥</h1>
+        <p>Купи сейчас или твоя жизнь никогда не станет лучше!!!</p>
+    </header>
+
+    <main class="container">
+
+        <aside>
+            <img src="img/derg.jpg" alt="">
+            <p>ДЕРЖАТЕЛЬ ДЛЯ БАНАНА КУПИТЬ</p>
+
+            <img src="img/maxresdefault.jpg" alt="">
+            <p>ЗАПИСЫВАЙТЕСЬ. СТАЖ 10 ДНЕЙ</p>
+
+            <img src="img/shoe.jpg" alt="">
+            <p>УДОБНАЯ ОБУВЬ</p>
+
+            <img src="img/kraska.png" alt="">
+            <p>КУПИ КРАСКУ ДЛЯ ВОЛОС</p>
+
+            <img src="img/banana4.jpg" alt="">
+            <p>УДОБНАЯ ОБУВЬ 100x</p>
+
+            <img src="img/food.jpg" alt="">
+            <p>ДОСТАВКА</p>
+
+        </aside>
+
+        <div class="content">
+
+            <section class="product">
+                <h2>Наш продукт - портативная трубка телефона в виде банана!</h2>
+                <img src="img/banana.jpg" alt="product">
+                <p class="big-text">При покупке двух бананов, второй в подарок</p>
+                <p class="small-text">Подарочный банан оплачивается по цене двух</p>
+            </section>
+
+            <section class="reasons">
+                <h2>ТОП 5 причин почему это нужно именно тебе</h2>
+
+                <div class="reasons-grid">
+                    <div>Ты устал от синей зубной гарнитуры, которая вечно теряется и разряжается? Проводной банан — символ стабильности. Он всегда готов к работе, не требует зарядки (питание по проводу) и не улетит в салат, когда ты встанешь из-за стола.</div>
+                    <div>Ты больше не будешь орать в микрофон ноутбука, чтобы тебя услышали. Ты просто берешь Банан — и говоришь в него, как в детективе, сохраняя конфиденциальность.</div>
+                    <div>Держать у уха холодный пластик смартфона утомляет, а банан гнется под форму уха. С ним можно проговорить час и не затечь рукой (а если проголодаешься — напоминает перекусить).</div>
+                    <div>В отличие от беспроводной гарнитуры, эту фигню далеко не унесешь — провод держит. Можно разрешить ребенку «играть в телефон», не боясь, что дорогой смартфон улетит в унитаз.</div>
+                    <div>Серый офисный телефон убивает душу. Желтый банан на проводе — это маленькое солнце. Глядя на него, хочется говорить бодрым голосом, а не бубнить.</div>
+                </div>
+
+            </section>
+
+            <section class="slogans">
+                <h2>АГИТАЦИОННЫЕ ЛОЗУНГИ</h2>
+
+                <p>КУПИ ПРЯМО СЕЙЧАС!!!</p>
+                <p>НЕ ДУМАЙ — НАЖМИ КНОПКУ!!!</p>
+                <p>ТВОЯ ЖИЗНЬ ИЗМЕНИТСЯ!!!</p>
+                <p>ТЕБЕ НЕ ХВАТАЕТ ТОЛЬКО ЭТОГО!!!</p>
+            </section>
+
+            <section class="reviews">
+                <h2>Отзывы пользователей</h2>
+
+                <div class="reviews-flex">
+
+                    <div class="review">
+                        <p>⭐️⭐️⭐️⭐️⭐️</p>
+                        <p>Я купил это ночью и теперь не могу остановиться!</p>
+                    </div>
+
+                    <div class="review">
+                        <p>⭐️⭐️⭐️⭐️</p>
+                        <p>Сначала сомневался, но реклама убедила!</p>
+                    </div>
+
+                    <div class="review">
+                        <p>⭐️⭐️⭐️⭐️⭐️</p>
+                        <p>Моя кошка заговорила после применения! Спасибо производителю!</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <aside>
+            <img src="img/chehol.jpg" alt="">
+            <p>КОНТЕЙНЕР ДЛЯ БАНАНА КУПИТЬ</p>
+
+            <img src="img/priut.jpg" alt="">
+            <p>ПРАВОСЛАВНЫЙ ПРИЮТ ПРОСИТ ПОДДЕРЖКИ</p>
+
+            <img src="img/samolet.jpg" alt="">
+            <p>КУПИ САМОЛЕТ</p>
+
+            <img src="img/clash.jpg" alt="">
+            <p>СКАЧАЙ КЛЕШ РОЯЛЬ</p>
+
+            <img src="img/goro.jpg" alt="">
+            <p>КУПИ МАТРИЦУ СУДЬБЫ</p>
+
+            <img src="img/test.jpg" alt="">
+            <p>ТЕСТ НА ХАРАКТЕР</p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Лабораторная работа Шапиро Ольги КС-26</p>
+    </footer>
+
+    <div class="popup-ad" id="popup">
+
+        <span class="close" id="close">X</span>
+
+        <img src="img/man.jpg" alt="">
+
+        <p>🔥 ЗВОНИ ПРЯМО СЕЙЧАС 🔥</p>
+
+    </div>
+
+    <script>
+
+        const popup = document.getElementById("popup")
+        const close = document.getElementById("close")
+
+        function showAd() {
+            popup.style.display = "block"
+        }
+
+        close.onclick = function () {
+            popup.style.display = "none"
+        }
+
+        setInterval(showAd, 15000)
+
+    </script>
+
+</body>
+
+</html>

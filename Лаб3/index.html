@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторня  работа №1</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #f4f4f4;
+            padding: 20px 0;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fafafa;
+            overflow: auto; /* чтобы float не ломал блок */
+        }
+
+        .right-image {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            max-width: 25%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        img:not(.right-image) {
+            display: block;
+            margin: 20px auto;
+            max-width: 50%;
+        }
+
+        p, blockquote, li {
+            font-size: 1.2rem;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: center;
+        }
+        .game-button {
+            display: block;
+            margin: 20px auto;
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .game-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Задание к лабораторной работе №1</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Анекдот 1</h2>
+                <img src="https://masterpiecer-images.s3.yandex.net/31bd4eaa8ea011ee9d9456181a0358a2:upscaled"
+                     alt="цементный завод"
+                     class="right-image"
+                     title="цементный завод"
+                     id="image1">
+                <p>
+                    Беда не приходит одна. После взрыва на цементном заводе прошел дождь - и жизнь на предприятии окончательно замерла.
+                </p>
+
+        </section>
+
+        <section>
+
+            <h2>Анекдот 2</h2>
+
+                <img src="https://avatars.mds.yandex.net/i?id=4dfc7f20cc7b2acaad084f2c94994dca_l-5712428-images-thumbs&n=13"
+                     alt="красотка"
+                     class="right-image"
+                     title="красотка"
+                     id="image2">
+                <p>
+                    У женщины средних лет случился инфаркт. Пока врачи боролись в операционной за ее жизнь, она увидела перед собой Бога.
+                    – Это конец? – спросила она.
+                    Бог покопался в своих записях и ответил, что ее время наступит еще через 40 лет, 3 дня и 8 часов…
+                    Очнувшись от наркоза после операции женщина попросила врача, раз уж она все равно в больнице, сделать ей все возможные косметические операции: <wbr>подтяжку лица, увеличить и поднять грудь, убрать жир на бедрах и животе, и т. п. <wbr>Перед выпиской из больницы она пригласила косметичку и та сделала ей маникюр, педикюр, и перекрасила ее в блондинку. <wbr>Не успела счастливая женщина выйти из больницы как ее насмерть сбивает машина скорой помощи…
+                    – Господи, – воскликнула женщина, снова представ перед Богом,
+                    – Ты же сказал, что у меня еще 40 лет жизни впереди!?
+                    – Ох, извини… не узнал!
+                </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>Анекдот 3</h2>
+
+            <img src="https://fb.ru/media/i/2/9/2/7/7/6/3/i/2927763.jpg"
+                 alt="муравей"
+                 class="right-image"
+                 title="муравей"
+                 id="image3">
+            <p>
+                Пока не начинаешь в солнечый день наблюдать за жизнью муравьев через увеличительное стекло, тебе и в голову не приходит, как часто эти создания вдруг ни с того ни с сего вспыхивают огнем.
+            </p>
+
+        </section>
+
+        <section>
+            <h2>Игра: Рыцарский турнир</h2>
+            <button class="game-button" onclick="startTournament()">Начать турнир</button>
+        </section>
+
+        <script src="index.js"></script>
+
+        <section>
+            <h2>Последний “употреблённый” контент</h2>
+            <p>В марте 2024 года KawoDeda выпускает первые серии мультфильма о Сире Демьянбальде. Мужчине отказали в титуле рыцаря, но сам он не перестал считать себя таковым и отправился путешествовать. Начиная с 1 марта 2024-го, было выпущено четыре короткометражные серии:</p>
+            <ol>
+                <li><a href="https://youtu.be/CmWB48vDgYA?si=tQai-5t5uJSd340x">«Извинись перед рыцарем»;</a></li>
+                <li><a href="https://youtu.be/5jkVT4-6Sec?si=Zs3qkiMTqJ08hzSo">«Рыцарь упал с моста»;</a></li>
+                <li><a href="hhttps://youtu.be/SXOf10vhGgU?si=j6-O7RPtFKOojCFf">«Рыцарь умер»;</a></li>
+                <li><a href="https://youtu.be/-Jn11sm3DuQ?si=s5QR-HBRcCqCLZNj">«Рыцари не загадывают желания».</a></li>
+            </ol>
+
+            <img src="http://avatars.mds.yandex.net/get-vthumb/2842911/7e169c8af846311f39ad3e076f461ece/800x450"
+                 alt="Демьянбальд"
+                 title="Демьянбальд"
+                 id="image4">
+
+            <p>В рамках каждого эпизода Демьянбальд, лысый усач в доспехах, становится участником максимально абсурдных и забавных историй. Он пристаёт ко всем и попадает в глупые ситуации, после чего выпрашивает у собеседников извинений.</p>
+
+            <img src="https://i.ytimg.com/vi/OhWWsMQXPcA/maxresdefault.jpg"
+                 alt="скелет"
+                 title="скелет"
+                 id="image5">
+        </section>
+
+       <section>
+            <h2>Мой отзыв</h2>
+
+            <p>
+                Это лучшие видео, которые я смотрела в последнее время.
+                Особенно запоминаются мемы связанные с этим контентом.
+                Это видео вдохновило меня на всю оставшуюся жизнь. Я буду помнить его еще долго.
+                Я считаю данный сборник обязателен к просмотрю каждому человеку.
+                Этот контент полезен для любой аудитории, приятная граафика и разнообразие героев.
+            </p>
+       </section>
+
+       <section>
+            <h2>Цитаты</h2>
+            <ul>
+                <li><q>Извинись перед рыцарем</q> Сир Демьянбальд</li>
+                <li><q>Да че-то нет, обидно мне до сих пор. Пусть еще он извинится.</q> Сир Демьянбальд</li>
+                <li><q>Не извинились короче. Убиваю. ААААААААА</q> Сир Демьянбальд</li>
+                <li><q>Люди неоправдано перестали шутить про цыган</q> Король скелетов</li>
+                <li><q>Нет!? Пошёл ты тогда н**уй, рыцаря задержал</q> Сир Демьянбальд</li>
+                <li><q>Объединяемся, это женщина! Она убила рыцаря, сильная с*ка перефехтовала</q> Сир Демьянбальд</li>
+
+            </ul>
+
+        </section>
+
+        <section>
+            <table>
+                <caption>Расписание матчей Зенит на январь-февраль 2026</caption>
+                <tr>
+                    <th>Кто играет</th>
+                    <th>Когда</th>
+                    <th>Счёт</th>
+                </tr>
+
+                <tr>
+                    <td>Зенит — Шанхай Порт</td>
+                    <td>22 января 2026, 17:30</td>
+                    <td>4 : 1</td>
+                </tr>
+
+                <tr>
+                    <td>Зенит — Шанхай Порт</td>
+                    <td>26 января 2026, 11:00</td>
+                    <td>6 : 0</td>
+                </tr>
+
+                <tr>
+                    <td>Зенит — Динамо (Москва)</td>
+                    <td>03 февраля 2026, 15:00</td>
+                    <td>2 : 1</td>
+                </tr>
+
+                <tr>
+                    <td>Краснодар — Зенит</td>
+                    <td>06 февраля 2026, 19:15</td>
+                    <td>3 : 0</td>
+                </tr>
+
+                <tr>
+                    <td>Зенит — Динамо (Самарканд)</td>
+                    <td>09 февраля 2026, 15:00</td>
+                    <td>1 : 0</td>
+                </tr>
+
+                <tr>
+                    <td>Зенит — ЦСКА</td>
+                    <td>10 февраля 2026, 10:00</td>
+                    <td>2 : 2 (3 : 4)</td>
+                </tr>
+
+                <tr>
+                    <td>Зенит — Краснодар</td>
+                    <td>17 февраля 2026, 16:00</td>
+                    <td>1 : 0</td>
+                </tr>
+
+                <tr>
+                    <td>Зенит — Балтика</td>
+                    <td>27 февраля 2026, 19:30</td>
+                    <td>- : -</td>
+                </tr>
+
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © 2026 Лабораторная работа №1
+            В49. Шапиро О.Е. КС-26
+        </p>
+    </footer>
+
+</body>
+</html>

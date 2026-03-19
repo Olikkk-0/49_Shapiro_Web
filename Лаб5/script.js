@@ -1,7 +1,7 @@
 "use strict";
 
 
-//  БАЗОВЫЙ КЛАСС  (инкапсуляция — все поля приватные)
+//  БАЗОВЫЙ КЛАСС  
 
 class Card {
   #id; #name; #rarity; #hp; #dmg; #dps;
@@ -171,7 +171,7 @@ function cardFromData(data) {
 }
 
 
-//  НАЧАЛЬНЫЕ 5 КАРТ
+//  НАЧАЛЬНЫЕ КАРТЫ
 
 const PRESET_DATA = [
   {

@@ -1,6 +1,4 @@
-/* ══════════════════════════════════════════
-   TOKENS & VARIABLES
-══════════════════════════════════════════ */
+/*  TOKENS & VARIABLES */
 :root {
   --bg:         #0d0d10;
   --bg-2:       #16161c;
@@ -26,9 +24,7 @@
   --trans:   0.2s ease;
 }
 
-/* ══════════════════════════════════════════
-   RESET & BASE
-══════════════════════════════════════════ */
+/* RESET & BASE */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
@@ -53,9 +49,7 @@ input, textarea {
 }
 textarea { resize: vertical; }
 
-/* ══════════════════════════════════════════
-   HEADER
-══════════════════════════════════════════ */
+/* HEADER*/
 .site-header {
   position: sticky;
   top: 0;
@@ -85,9 +79,7 @@ textarea { resize: vertical; }
   letter-spacing: 0.01em;
 }
 
-/* ══════════════════════════════════════════
-   NAVIGATION
-══════════════════════════════════════════ */
+/* NAVIGATION */
 .main-nav { flex-shrink: 0; }
 
 .nav-list {
@@ -116,9 +108,7 @@ textarea { resize: vertical; }
   font-weight: 600;
 }
 
-/* ══════════════════════════════════════════
-   MAIN
-══════════════════════════════════════════ */
+/*  MAIN */
 .site-main {
   flex: 1;
   max-width: 960px;
@@ -127,9 +117,7 @@ textarea { resize: vertical; }
   padding: 40px 24px;
 }
 
-/* ══════════════════════════════════════════
-   SECTIONS
-══════════════════════════════════════════ */
+/* SECTIONS*/
 .api-section { display: none; }
 .api-section.active { display: block; animation: fadeIn 0.3s ease; }
 
@@ -176,9 +164,7 @@ textarea { resize: vertical; }
 .api-badge.put   { color: var(--orange); border-color: rgba(240,146,74,0.3); }
 .api-badge.del   { color: var(--red);    border-color: rgba(224,90,90,0.3); }
 
-/* ══════════════════════════════════════════
-   SEARCH BAR
-══════════════════════════════════════════ */
+/*  SEARCH BAR */
 .search-bar {
   display: flex;
   gap: 10px;
@@ -202,9 +188,7 @@ textarea { resize: vertical; }
 
 .search-bar input::placeholder { color: var(--text-dim); }
 
-/* ══════════════════════════════════════════
-   BUTTONS
-══════════════════════════════════════════ */
+/* BUTTONS */
 .btn-primary {
   background: var(--accent);
   color: var(--bg);
@@ -243,9 +227,7 @@ textarea { resize: vertical; }
 }
 .btn-ghost:hover { color: var(--text); border-color: var(--text-muted); }
 
-/* ══════════════════════════════════════════
-   PLACEHOLDER / LOADING / ERROR
-══════════════════════════════════════════ */
+/*  PLACEHOLDER / LOADING / ERROR */
 .placeholder-box,
 .loading-box,
 .error-box {
@@ -304,9 +286,7 @@ textarea { resize: vertical; }
 
 .hidden { display: none !important; }
 
-/* ══════════════════════════════════════════
-   WEATHER CARD
-══════════════════════════════════════════ */
+/*   WEATHER CARD */
 .weather-card {
   background: var(--bg-2);
   border: 1px solid var(--border);
@@ -378,9 +358,7 @@ textarea { resize: vertical; }
   color: var(--text-dim);
 }
 
-/* ══════════════════════════════════════════
-   POSTS
-══════════════════════════════════════════ */
+/*  POSTS*/
 .posts-controls,
 .facts-controls {
   display: flex;
@@ -468,9 +446,7 @@ textarea { resize: vertical; }
   transition: opacity 0.3s, transform 0.3s;
 }
 
-/* ══════════════════════════════════════════
-   POST FORM
-══════════════════════════════════════════ */
+/*  POST FORM */
 .form-wrapper {
   background: var(--bg-2);
   border: 1px solid var(--border);
@@ -523,9 +499,7 @@ textarea { resize: vertical; }
   margin-top: 8px;
 }
 
-/* ══════════════════════════════════════════
-   FACTS
-══════════════════════════════════════════ */
+/*  FACTS */
 .facts-list {
   display: flex;
   flex-direction: column;
@@ -564,9 +538,7 @@ textarea { resize: vertical; }
   color: var(--text-dim);
 }
 
-/* ══════════════════════════════════════════
-   FOOTER
-══════════════════════════════════════════ */
+/*  FOOTER */
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 20px 24px;
@@ -576,9 +548,7 @@ textarea { resize: vertical; }
   font-family: var(--font-mono);
 }
 
-/* ══════════════════════════════════════════
-   RESPONSIVE
-══════════════════════════════════════════ */
+/*  RESPONSIVE */
 @media (max-width: 640px) {
   .header-inner { flex-direction: column; height: auto; padding: 14px 16px; gap: 10px; }
   .site-main { padding: 24px 16px; }
